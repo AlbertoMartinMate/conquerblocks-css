@@ -1,3 +1,7 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.AdvanceCustomBrowserCmd.windows": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "liveServer.settings.AdvanceCustomBrowserCmd.linux": "google-chrome",
+  "liveServer.settings.AdvanceCustomBrowserCmd.mac": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 }

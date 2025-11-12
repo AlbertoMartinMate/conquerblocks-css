@@ -1,0 +1,20 @@
+.caja1.ej1{
+    width: 250;
+    height: 200;
+    border: 5px solid red;
+    background-color: grey;
+    padding: 10px;
+    margin: 25px;
+
+}
+
+.caja2.ej1{
+    width: 300;
+    height: 200;
+    border: 7px solid green;
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+
+}

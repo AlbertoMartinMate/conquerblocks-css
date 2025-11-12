@@ -1,0 +1,25 @@
+div.caja1.ej3 {
+    border: 5px solid red;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+div.caja2.ej3 {
+    border: 5px solid blue;
+    padding: 25px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+div.caja3.ej3 {
+    border: 5px solid green;
+    padding: 50px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
