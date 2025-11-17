@@ -5,7 +5,7 @@
 
 .banderas div {
   width: 30%;
-  aspect-ratio: 1.4;
+  aspect-ratio: 1.4; /* Por cada 1 de alto, el ancho será 1.4*/
   border: 1px solid black;
   display: inline-block;
   margin: 10px;
@@ -55,7 +55,7 @@ div.polonia {
   background-image: linear-gradient(
       white 50%,
       red 50%,
-      red 100%);
+      red 100%)
 }
 
 div.japon {
@@ -117,8 +117,8 @@ div.japon {
 
 
 .positionExercise {
-  min-height: 80vh;
-  position: relative;
+  min-height: 80vh; /*alto de la pagina*/
+  position: relative; /*para que los elementos posicionados absolutamente dentro de este contenedor se posicionen en relación a él*/
   background-color: yellow;
 }
 
@@ -129,7 +129,7 @@ div.japon {
   border: 3px dashed black;
 }
 
-.positionExercise .right {
+.positionExercise .right {  /*lo sobreescribimos para llevarnoslo a la derecha*/
   position: absolute;
   top: 0;
   right: 0;

@@ -1,0 +1,92 @@
+.banderas {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.banderas div {
+  width: 30%;
+  aspect-ratio: 1.4; /* Por cada 1 de alto, el ancho será 1.4*/
+  border: 1px solid black;
+  display: inline-block;
+  margin: 10px;
+}
+
+.colombia_2 {
+    background-image: linear-gradient(
+        yellow 33.3%,
+        blue 33.3%,
+        blue 66.6%,
+        red 66.6%,
+        red 100%
+    );
+}
+
+.francia_2{
+    background-image: linear-gradient(
+        to right,
+        red 33.3%,
+        white 33.3%,
+        white 66.6%,
+        blue 66.6%,
+        blue 100%
+    );
+}
+
+.italia_2{
+    background-image: linear-gradient(
+        to right,
+        green 33.3%,
+        white 33.3%,
+        white 66.6%,
+        red 66.6%,
+        red 100%
+    );
+}
+
+.alemania_2{
+    color: white;
+    background-image: linear-gradient(
+        black 33.3%,
+        red 33.3%,
+        red 66.6%,
+        yellow 66.6%,
+        yellow 100%
+    );
+}
+
+.japon_2{
+    background-image: radial-gradient(
+        circle,
+        red 30%,
+        white 30%,
+        white 100%
+    );
+}
+
+.polonia_2{
+
+    background-image: linear-gradient(
+        white 50%,
+        red 50%,
+        red 100%
+    );
+}
+
+.myHeader_2 {
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(49, 49, 240);
+  background-image: url(../img/balloons.jpg);
+  background-repeat: no-repeat;
+  width: 350px;
+  background-position: top right;
+  background-size: 100%;
+
+}
+
+.myHeader_2 h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
