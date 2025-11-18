@@ -122,3 +122,41 @@
 .paginate span:nth-of-type(2) {
     float: right;
 }
+
+.positionExercise {
+  min-height: 80vh; /*alto de la pagina*/
+  position: relative; /*para que los elementos posicionados absolutamente dentro de este contenedor se posicionen en relación a él*/
+  background-color: yellow;
+}
+
+.positionExercise .left, .positionExercise .right {
+  width: 300px;
+  padding: 20px;
+  background-color: #ccc;
+  border: 3px dashed black;
+}
+
+.positionExercise .right {  /*lo sobreescribimos para llevarnoslo a la derecha*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.positionExercise footer{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #ccc;
+}
+
+.positionExercise .center {
+  text-align: center;
+  margin-top: 20%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
