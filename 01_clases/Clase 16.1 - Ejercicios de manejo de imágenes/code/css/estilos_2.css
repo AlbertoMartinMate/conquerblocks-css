@@ -90,3 +90,35 @@
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+.myHeader2_2 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.myHeader2_2 {
+    border: 5px solid rgb(102, 112, 187);
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 150px;
+    padding: 10px 40px;
+    text-align: center;
+    background-image: url(../img/star.png), url(../img/star.png), url(../img/star.png), url(../img/star.png);
+    background-size: 20px, 20px, 20px, 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 50%, 95% 50%, 95% 25%, 95% 75%;
+
+}
+
+.paginate {
+    background-color: rgb(190, 190, 190);
+    height: 20px;
+    padding: 10px;
+    vertical-align: middle;
+
+}
+
+.paginate span:nth-of-type(2) {
+    float: right;
+}
