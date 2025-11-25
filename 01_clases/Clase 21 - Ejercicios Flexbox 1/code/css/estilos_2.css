@@ -1,0 +1,132 @@
+header{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1 {
+  background-color: black;
+  color: white;
+  text-align: left;
+  font-size: 40px;
+  padding: 30px 20px;
+  margin-bottom: 0px;
+
+}
+
+header nav{
+  background-color: rgb(183, 183, 183);
+}
+
+header nav ul{
+  display: flex;
+  list-style: none; /*quita los puntos del listado*/
+  margin: 0;
+  padding: 0;
+
+}
+
+header nav ul li a{ /*convertimos los a en elem de bloque para poder*/ 
+  padding: 10px 20px; /*darles padding y al pinchar sea todo el cuado */
+  display: block;
+}
+
+
+header li a {        /*le quitamos el azul de enlace*/
+  text-decoration: none; /*le quitamos el subrayado*/
+  color: black;
+}
+
+header li a:hover {
+  color: white;
+  background-color: black;
+}
+
+.ejercicio2 nav ul {
+  justify-content: center;
+}
+
+.ejercicio3 nav ul {
+  justify-content: space-between;
+}
+
+header.ejercicio4 nav {
+  max-width: 200px; /* le damos tamaño al nav para q no ocupe todo el ancho */
+}
+
+header.ejercicio4 nav ul {
+  flex-direction: column;
+}
+
+.imgContainer{
+  background-color: rgb(183, 183, 183);
+  margin-top: 20px;
+  display: flex;
+}
+.imgContainer img{
+  width: 100px;
+  border: 1px dashed black;
+}
+
+header.ejercicio6 .imgContainer {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  background-color: #ccc;
+  padding: 10px 5px;
+}
+
+header.ejercicio7 h1{
+  font-size: 20px;
+  text-align: right;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.travelContainer {
+  /* Mostrar los article en fila: estaba dentro de .ejercicio7 (header),
+     pero en el HTML la .travelContainer está dentro de <main> y es hermana
+     del header, por eso el selector anterior no se aplicaba. */
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.travel{
+  /* usar flex para que los elementos se adapten y respeten padding sin
+     provocar que el ancho total supere el 100% (box-sizing) */
+  flex: 1 1 33.33%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.travel__title {
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.travel__description {
+  font-size: 14px;
+  text-align: justify;
+}
+.travel__img {
+  /* Asegurar que la imagen se renderiza correctamente dentro del flex item */
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* para que no exceda el ancho del padre */
+  box-sizing: border-box;
+  /* Mantengo aspect-ratio para navegadores modernos, pero no debe ser
+     necesario para que la imagen se muestre */
+  aspect-ratio: 16/9;
+}
+
+.travel:first-of-type{
+  background-color: goldenrod;
+}
+
+.travel:nth-of-type(2) {
+  background-color: rgb(79, 187, 226);
+}
+
+.travel:nth-of-type(3) {
+  background-color: rgb(44, 96, 33);
+}
