@@ -1,0 +1,125 @@
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Ejercicio 1 */
+div.ejercicio01 {
+  margin-left: 5px;
+  max-width: 450px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  gap: 1px;
+  
+}
+
+div.ejercicio01 div {
+  background-color: #5F717D;
+  padding: 16px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Ejercicio 2 */
+
+div.ejercicio02 {
+  width: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+div.ejercicio02>div {
+  background-color: #5F717D;
+  padding: 16px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+div.ejercicio02>div.principal {
+  grid-column: 1 / span 3;
+}
+
+/* Ejercicio 3 */
+
+div.ejercicio03 {
+  display: grid;
+  grid-template-columns: 120px repeat(2, 175px);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+div.ejercicio03>div {
+  background-color: #5F717D;
+  padding: 16px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+div.ejercicio03>div.header {
+  grid-column: 1 / span 3;
+}
+
+div.ejercicio03>div.sidebar {
+  grid-row: 2 / span 2;
+  padding: 15px 5px;
+}
+
+/* Ejercicio 4 */
+
+div.ejercicio04 {
+  display: grid;
+  grid-template-columns: 120px repeat(2, 175px);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px;
+
+}
+
+div.ejercicio04>div {
+  background-color: #5F717D;
+  padding: 16px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+div.ejercicio04>div.header {
+  grid-area: 1 /1 / 1/ 4;
+}
+
+div.ejercicio04>div.sidebar {
+  grid-area: 2 /1 / 4/ 2;
+}
+
+/* Ejercicio 5 */
+
+div.ejercicio05 {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: 1fr 1fr;
+  gap: 1px;
+
+}
+
+div.ejercicio05>div {
+  background-color: #5F717D;
+  padding: 16px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+div.ejercicio05>div.header {
+  grid-area: 1 /1 / 2/ 4;
+}
+
+div.ejercicio05>div.sidebar {
+  grid-area: 1 /4 / 3/ 5;
+}
+
