@@ -174,12 +174,13 @@ nav ul li a:hover {
 .instagram h2 {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto 1fr; /*grilla con los 3 elems.*/
   align-items: center;
   gap: 20px;
 }
 
-.instagram h2:after {
+/* para crear elementos decorativos */
+.instagram h2:after { /* antes del h1 */
   content: '';
   height: 10px;
   display: block;

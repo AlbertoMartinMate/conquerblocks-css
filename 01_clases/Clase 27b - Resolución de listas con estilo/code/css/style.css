@@ -44,9 +44,6 @@ ul.example2 li.active a{
     color: white;
 }
 
-ul.example2 li:hover {
-}
-
 ul.example2 li+li {
   border-top: 1px solid #e6e6e6;
 }
@@ -128,7 +125,12 @@ ul.example5 {
   list-style: none;
 }
 
-ul.example5 li::before {
+ul.example5 li {
+  display: flex;          /* ⬅️ Alinear contenido */
+  align-items: center;    /* ⬅️ Centrado vertical */
+}
+
+ul.example5 li a::before {
   counter-increment: step-counter;
   content: counter(step-counter);
   background-color: black;
@@ -140,4 +142,26 @@ ul.example5 li::before {
   height: 10px;
   display: inline-block;
   text-align: center;
+  margin-right: 10px;
 }
+
+/* Enlace reducido: no ocupa todo el ancho, solo su contenido + padding */
+ul.example5 li a {
+  display: inline-block;
+  width: auto;
+  padding: 6px 10px; /* ajusta el 'hit target' */
+  text-decoration: none;
+  color: black;
+}
+
+ul.example5 li:hover a::before{
+  color: black;
+  background-color: white;
+}
+
+/* Estilo visual del enlace en hover */
+ul.example5 li a:hover {
+  color: white;
+  background-color: black;
+}
+
